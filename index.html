@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+          <h1 class="mainheading" style="font-size:10vw;">Todos Web Application</h1>
+          <ul class="todo-list js-todo-list list" id="listOne"></ul>
+          
+          <div class="middle">
+
+            <h2 class="make">You can make a list of things you need to do</h2>
+
+          </div>
+          
+          <form class="todo-form js-form">
+
+            <input autofocus type="text" aria-label="Enter a new todo item" placeholder="enter text to make list" id="ToDoItem" class="js-todo-input">
+
+          </form>
+
+          <button id="my-btn" onclick="AddItem()" class="AddButton">Add item</button>
+
+          <button onclick="DeleteAll()" class="DeleteAll">Delete All</button>
+
+        </div>
+
+      </main>
+     
+</body>
+<script src="app.js"></script>
+</html>

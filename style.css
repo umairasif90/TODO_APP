@@ -1,0 +1,161 @@
+
+  *, *::before, *::after {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+   font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  
+  .mainheading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 70px;
+    color: purple;
+  }
+  
+  .svgg {
+    width: 100px;
+    height: auto;
+  }
+  
+  .todo-list {
+    margin-bottom: 10px;
+  }
+  
+  .todo-item {
+    margin-bottom: 5px;
+    font-size: larger;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .todo-item span {
+    flex-grow: 3;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+    
+  .delete-todo {
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 7px;
+    background-color:rgb(204, 198, 198);
+    color: black;
+    outline: none;
+    cursor: pointer;
+  }
+  .delete-todo:hover{
+    background-color: #ff4d4d;
+    color: white;
+    transition: 0.6s;
+  }
+  .edit-todo{
+    margin: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 7px;
+    background-color: rgb(204, 198, 198);
+    color: black;
+    outline: none;
+    cursor: pointer;
+  }
+  .edit-todo:hover{
+    background-color: #009eeb ;
+    color: white;
+    transition: 0.6s;
+  }
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 3px solid #333;
+  }
+  
+  .AddButton{
+    align-content: center;
+    margin: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+    border: 1px solid yellow;
+    background-color: rgb(12, 196, 180);
+    color: white;
+    border-radius: 15px;
+    padding: 7px;
+    outline: none;
+    cursor: pointer;
+  }
+  .AddButton:hover{
+    background-color: #007cb8;
+    color: white;
+    color: black;
+    transition: 0.6s;
+  }
+  .DeleteAll{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    border: 1px solid yellow;
+    border-radius: 15px;
+    padding: 7px;
+    background-color: rgb(12, 196, 180);
+    color: white;
+    outline: none;
+    cursor: pointer;
+  }
+  .DeleteAll:hover{
+    background-color: #007cb8;
+    color: black;
+    transition: 0.6s;
+  }
+
+  .middle {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  
+  .checklist-icon {
+    margin-bottom: 20px;
+  }
+  
+  .make {
+    margin-bottom: 20px;
+  }
+  .todo-list:empty {
+    display: none;
+  }
+  .todo-list:empty + .middle {
+    display: flex;
+  }
